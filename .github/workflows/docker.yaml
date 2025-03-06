@@ -27,7 +27,7 @@ jobs:
 
     - name: Build and push image to ACR EE
       run: |
-        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $REGISTRY
+        echo "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" | docker login -u "${{ secrets.ALIYUN_REGISTRY_USER }}" --password-stdin registry.cn-hangzhou.aliyuncs.com
         sh pull.sh
         data=`cat trigger.txt`
 
