@@ -1,4 +1,4 @@
-nginx:latest registry.cn-hangzhou.aliyuncs.com/jtrlengyue/nginx:latest
+nginx:alpine registry.cn-beijing.aliyuncs.com/jtrlengyue/nginx:alpine
 langgenius/dify-api:0.6.11 registry.cn-hangzhou.aliyuncs.com/jtrlengyue/dify-api:0.6.11
 langgenius/dify-web:0.6.11 registry.cn-hangzhou.aliyuncs.com/jtrlengyue/dify-web:0.6.11
 postgres:15-alpine registry.cn-hangzhou.aliyuncs.com/jtrlengyue/postgres:15-alpine
